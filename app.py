@@ -753,7 +753,7 @@ def full_recon(target):
 # WEB SERVER
 # ═══════════════════════════════════════════════════════════════════════════════
 
-HTML_CONTENT = (Path(__file__).parent / 'index.html').read_text()
+HTML_CONTENT = (Path(__file__).parent / 'index.html').read_text(encoding='utf-8')
 
 class OSINTHandler(BaseHTTPRequestHandler):
     def log_message(self, format, *args): pass
